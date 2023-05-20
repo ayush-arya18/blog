@@ -1,11 +1,12 @@
 <%- include("partials/header") -%>
 <h1>Compose</h1>
-<form action="/compose" method="post">
+<form action="/compose" method="post" enctype="multipart/form-data">
     <div class="form-floating mb-3">
         <label>Title</label>
         <p><input class="form-control" type="text" name="userTitle"></p>
         <label>Post</label>
         <p><textarea class="form-control" id="floatingTextarea2" style="height:100px" name="userData"></textarea></p>
+        <p><input type="file" name="file"></img></p>
         <p><button class="btn btn-primary" type="textarea" name="publish">Publish</button></p>
     </div>
 </form>

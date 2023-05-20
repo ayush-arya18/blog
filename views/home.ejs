@@ -6,7 +6,7 @@
     <% var data=userBlog[i].content %>
     <% if(data.length>100){ %>
         <% data=data.substring(0,100)+"..."; %>
-        <p><%= data %><a href="/posts/<%= userBlog[i]._id %>">read more</a></p>
+        <p><%= data %><a href="/<%= userBlog[i]._id %>">read more</a></p>
     <% } else { %>
         <p><%= data %></p>
     <% } %>

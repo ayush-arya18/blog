@@ -1,5 +1,8 @@
 <%- include("partials/header") -%>
 <p><h1><%= chosenBlog.title %></h1></p>
+<% if(chosenBlog.image){ %>
+    <p><img class="image-data img-fluid" src="./uploads/<%=chosenBlog.image%>"></p>
+<% } %>
 <p><%= chosenBlog.content %></p>
 <form action="/delete" method="post">
     <button class="btn btn-primary" type="submit" name="delete" value="<%= chosenBlog._id %>">Delete</button>
